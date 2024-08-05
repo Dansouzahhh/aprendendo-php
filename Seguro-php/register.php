@@ -3,14 +3,14 @@
     include_once 'includes/functions.php'; 
 ?>
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-    <title>Secure Login: Registration Form</title> 
-    <script type="text/JavaScript" src="js/sha512.js"></script>
-    <script type="text/JavaScript" src="js/forms.js"></script>
-    <link rel="stylesheet" href="styles/main.css" /> 
-</head>
+        <html>
+            <head>
+                <meta charset="UTF-8">
+            <title>Secure Login: Registration Form</title> 
+            <script type="text/JavaScript" src="js/sha512.js"></script>
+            <script type="text/JavaScript" src="js/forms.js"></script>
+            <link rel="stylesheet" href="styles/main.css" /> 
+        </head>
 <ul>
     
     <h1>Register with us</h1> 
@@ -33,28 +33,28 @@
     </li>
     <li>Sua senha deve conferir exatamente</li> 
     </ul>
-    <form action="<?php echo esc_url($_SERVER['PHP_SELF']); ?>" 
-        method="post"
-        name="registration_form"> 
-      
-      Username: <input type="text"
-        name="username"
-        id="username" value="rodrigo"/><br> 
-      Email: <input type="text" name="email" id="email" value="rodrigo@senac.com" /><br>
-      Password: <input type="password"
-            name="password"
-            id="password" value="$En4c2024"/><br> 
-      Confirm password: <input type="password"
-                name="confirmpwd"
-                id="confirmpwd" value="$En4c2024"/><br> 
-      <input type="button"
-        value="Register"
-        onclick="return regformhash(this.form,
-                        this.form.username,
-                        this.form.email,
-                        this.form.password,
-                        this.form.confirmpwd);" /> 
-    </form>
+            <form action="<?php echo esc_url($_SERVER['PHP_SELF']); ?>" 
+                method="post"
+                name="registration_form"> 
+            
+            Username: <input type="text"
+                name="username"
+                id="username" value="Daniel"/><br> 
+            Email: <input type="text" name="email" id="email" value="Dansouzahhh@gmail.com" /><br>
+            Password: <input type="password"
+                    name="password"
+                    id="password" value="$En4c2024"/><br> 
+            Confirm password: <input type="password"
+                        name="confirmpwd"
+                        id="confirmpwd" value="$En4c2024"/><br> 
+            <input type="button"
+                value="Register"
+                onclick="return regformhash(this.form,
+                                this.form.username,
+                                this.form.email,
+                                this.form.password,
+                                this.form.confirmpwd);" /> 
+            </form>
     <p>Return to the <a href="index.php">login page</a>.</p>
 </body>
 </html>
